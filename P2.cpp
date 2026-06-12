@@ -24,8 +24,8 @@ int main(){
     cout<<"2- Select the book"<<endl;
     cout<<"3- Add new book"<<endl;
     cout<<"4- Exit "<<endl;
-    cout<<"Enter your choice"<<endl;
     cout<<"--------------------------------------"<<endl;
+    cout<<"Enter your choice - ";
     char choice;
     cin>>choice;
         cin.ignore(); //to remove the error of the garbage value
@@ -94,7 +94,7 @@ void lib :: extract(){
         getline(file,author,'\n');
         if(select==id){
             found=true;
-            cout<<id<<'\t\t'<<name<<'\t\t\t'<<author<<endl;
+            cout<<id<<"\t\t"<<name<<"\t\t\t"<<author<<endl;
             cout<<"Book Found..."<<endl;
         break;
         }
